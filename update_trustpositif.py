@@ -77,4 +77,4 @@ manager = dbus.Interface(systemd1, 'org.freedesktop.systemd1.Manager')
 job = manager.RestartUnit('named.service', 'fail')
 
 print("File sudah dipindah dan bind service di restart, silahkan periksa kembali file rpz")
-print ("Jangan lupa buat cronjob * 1 1 * * python3 ~/update_trust.py kalau tdk males silahkan update secara manual")
+print ("Jangan lupa buat cronjob * 1 1 * * python3 ~/update_trustpositif.py, kalau tdk males silahkan update secara manual hehehe")
