@@ -1,0 +1,6 @@
+google.co.id IN CNAME forcesafesearch.google.com.
+www.google.co.id IN CNAME forcesafesearch.google.com.
+google.com IN CNAME forcesafesearch.google.com.
+www.google.com IN CNAME forcesafesearch.google.com.
+google.co.uk IN CNAME forcesafesearch.google.com.
+www.google.co.uk IN CNAME forcesafesearch.google.com.
