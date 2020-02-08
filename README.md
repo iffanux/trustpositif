@@ -1,5 +1,7 @@
 # trustpositif
 ![Aduan Content](https://trustpositif.kominfo.go.id/assets/images/aduan_.png)
+
+
 Python3 Script to update trustpositif kominfo
 Updating database trustpositif kominfo
 Prinsip kerjanya meredirect domain2 ke CNAME yang kita punya
