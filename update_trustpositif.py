@@ -66,7 +66,7 @@ print("\nThe content is merged successfully.!")
 print("sedang menulis ulang database ke rpz..Mohon tunggu sejenak!")
 print("file rpz sudah dibuat ulang")
 print("memindahkan file rpz")
-shutil.move('zoneFile', '/home/djan-home/Documents/db.zone.rpz')
+shutil.move('zoneFile', '/etc/named/db.zone.rpz')
 
 print("restarting bind service .......")
 sysbus = dbus.SystemBus()
