@@ -1,9 +1,9 @@
 # trustpositif
-![Kominfo](/kominfo_.png) ![Aduan Content](/aduan_content.png)
+![Kominfo](/kominfo_.png) ![Aduan Content](/aduan_content.png) ![Bind9](/Bind_9_ISC.png)
 
 
 # Python3 Script to update trustpositif kominfo
-* Script sederhana inibisa untuk Bind dan PowerDNS
+* Script sederhana ini bisa untuk Bind dan PowerDNS
 * Updating database dari servertrustpositif kominfo.
 * Prinsip kerjanya meredirect domain2 ke CNAME yang kita punya.
 * Cara Kerjanya adalah mengunduh database truspositif dan menyimpannya dalam domains.txt file,
