@@ -4,6 +4,7 @@
 #! Cara Kerjanya adalah mengunduh database truspositif dan menyimpannya dalam domains.txt file,
 #! Menambahkan SOA Header dan merubah file ekstensi ke rpz
 #! Menjalankan script : python3 update_trustpositif.py
+#! Script ini bebas digunakan dan modifikasi | djan.iffan@iforte.co.id |
 import ssl
 import shutil
 import requests
@@ -52,7 +53,8 @@ if os.path.exists("db.zone.rpz"):
   os.remove("db.zone.rpz")
 open('db.zone.rpz', 'a').close()
 
-filenames = ['header.txt', 'database.txt']
+# Tidak semua provider memasukan google safe search dalam databasenya, jadi untuk gsafesearch.txt ini optional
+filenames = ['header.txt', 'gsafesearch.txt', 'database.txt']
 with open('zoneFile', 'a+') as zoneFile:
     for fname in filenames:
         with open(fname) as infile:
