@@ -68,6 +68,8 @@ print("\nThe content is merged successfully.!")
 print("sedang menulis ulang database ke rpz..Mohon tunggu sejenak!")
 print("file rpz sudah dibuat ulang")
 print("memindahkan file rpz")
+#! Command ini memindahkan file db.zone.rpz yg sudah dibuat ke directory konfigurasi, 
+#! silahkan sesuaikan ke directory sesuai konfigurasi
 shutil.move('zoneFile', '/etc/named/db.zone.rpz')
 
 print("restarting bind service .......")
