@@ -4,7 +4,7 @@
 #! Cara Kerjanya adalah mengunduh database truspositif dan menyimpannya dalam domains.txt file,
 #! Menambahkan SOA Header dan mengubah file ekstensi ke rpz
 #! Menjalankan script : python3 update_trustpositif.py
-#! Script ini bebas digunakan dan modifikasi | djan.iffan@iforte.co.id |
+#! Script ini bebas digunakan dan dimodifikasi | djan.iffan@gmail.com |
 import ssl
 import shutil
 import requests
