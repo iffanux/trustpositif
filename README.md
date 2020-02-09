@@ -12,3 +12,5 @@
 * Edit atau update (google safesearch) gsafesearch.txt
 * Silahkan menjalankan script : python3 update_trustpositif.py atau buat cron * 1 1 * * python3 ~/update_trustpositif.py
 * Cron job tersebut akan mengeksekusi file setiap tanggal 1 jam 1 Dini Hari tiap bulan
+# Anda bebas untuk mengubah, mendistribusikan script ini untuk keperluan anda
+# https://www.gnu.org/licenses/gpl-3.0.html
