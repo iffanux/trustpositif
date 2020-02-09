@@ -7,7 +7,7 @@
 * Updating database dari servertrustpositif kominfo.
 * Prinsip kerjanya meredirect domain2 ke CNAME yang kita punya.
 * Cara Kerjanya adalah mengunduh database truspositif dan menyimpannya dalam domains.txt file,
-* Menambahkan SOA Header dan merubah file ekstensi ke rpz
+* Menambahkan SOA Header dan mengubah file ekstensi ke rpz
 * Edit SOA di header.txt sesuai server DNS kamu
 * Edit atau update (google safesearch) gsafesearch.txt
 * Silahkan menjalankan script : python3 update_trustpositif.py atau buat cron * 1 1 * * python3 ~/update_trustpositif.py
