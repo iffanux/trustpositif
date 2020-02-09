@@ -10,6 +10,8 @@ import shutil
 import requests
 import os
 from pathlib import Path
+from time import sleep
+import sys
 import dbus
 if os.path.exists("domains.txt"):
   os.remove("domains.txt")
@@ -24,6 +26,14 @@ ssl._create_default_https_context = ssl._create_unverified_context
 #! Membypass SSL Certificate
 print("bypassing SSL Mohon tunggu beberapa saat")
 response = requests.get('https://trustpositif.kominfo.go.id/Rest_server/domains', timeout=30, verify=False)
+
+for i in range(21):
+    sys.stdout.write('\r')
+    # the exact output you're looking for:
+    sys.stdout.write("[%-20s] %d%%" % ('='*i, 5*i))
+    sys.stdout.flush()
+    sleep(0.25)
+
 files = {'f': ('domains.txt', open('domains.txt', 'rb'))}
 response.encoding = 'utf-8'
 response.raise_for_status()
