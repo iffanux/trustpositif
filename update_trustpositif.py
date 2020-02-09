@@ -49,7 +49,7 @@ print('database berhasil diunduh')
 inputFile = "domains.txt"
 outputFile = "database.txt"
 headerFile = "header.txt"
-zoneFile = "db.zone.rpz"
+zoneFile = "db.rpz.zone"
 #! Silahkan ganti sesuai dengan domain CNAME kamu
 my_string = " IN CNAME trustpositif.iforte.net.id. "
 
@@ -61,9 +61,9 @@ with open(inputFile, 'r') as inFile:
 file.close()
 
 #! Membuat file rpz kosong
-if os.path.exists("db.zone.rpz"):
-  os.remove("db.zone.rpz")
-open('db.zone.rpz', 'a').close()
+if os.path.exists("db.rpz.zone"):
+  os.remove("db.rpz.zone")
+open('db.rpz.zone', 'a').close()
 
 # Tidak semua provider memasukan google safe search dalam databasenya, jadi untuk gsafesearch.txt ini optional
 filenames = ['header.txt', 'gsafesearch.txt', 'database.txt']
@@ -82,7 +82,7 @@ print("file rpz sudah dibuat ulang")
 print("memindahkan file rpz")
 #! Command ini memindahkan file db.zone.rpz yg sudah dibuat ke directory konfigurasi, 
 #! silahkan sesuaikan ke directory sesuai konfigurasi
-shutil.move('zoneFile', '/etc/named/db.zone.rpz')
+shutil.move('zoneFile', '/etc/named/db.rpz.zone')
 
 print("restarting bind service .......")
 sysbus = dbus.SystemBus()
